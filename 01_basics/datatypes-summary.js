@@ -1,4 +1,5 @@
 //  Primitive
+// in primitive data type get a copy of the variable and you can change but the original value not change
 
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 
@@ -18,16 +19,25 @@ console.log(id === anotherId);
 
 
 
+
+
+
+
 // Reference (Non primitive)
+// in  Reference (Non primitive) if we change any with diffrent variable it will change in original variable it will not copy  
 
 // Array, Objects, Functions
 
+//Array
 const heros = ["shaktiman", "naagraj", "doga"];
+
+//Object
 let myObj = {
     name: "hitesh",
     age: 22,
 }
 
+//Function
 const myFunction = function(){
     console.log("Hello world");
 }
@@ -35,3 +45,19 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.37
+
+
+
+//***********************************************************
+// Memory
+// Stack Memory (Primitive), Heap Memory (Non-primitive)
+
+//Stack (Primitive)
+
+let myName = "Govind";
+let changeName = myName;
+changeName = "Rajput";
+
+console.log(changeName);
+console.log(myName);
+
